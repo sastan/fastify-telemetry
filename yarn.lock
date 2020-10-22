@@ -870,10 +870,10 @@
   resolved "https://registry.npmjs.org/@carv/is/-/is-1.0.1.tgz#1dc85a1934b1333b4af87a4abfe3b5223c02603f"
   integrity sha512-Wjam9rF0fWP6wZ7thQgsHgVoGhZwmrKO/N4nKYwf5PkSol9HQmsJMPpEdrWUBNZgCmIPwrbiGMM+wYWiN8FHqQ==
 
-"@carv/metrics-process@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@carv/metrics-process/-/metrics-process-1.0.2.tgz#4b4830f19883ecec7eb37d900236af59f166c44f"
-  integrity sha512-/qhBXispkVC/ebpduNNjyUJVN2RNcUf4ifUyPQEKZ/aJn7xc12Zz77OW2dXZBWq/6PvNruOZCv76Uozh4YiOkw==
+"@carv/metrics-process@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@carv/metrics-process/-/metrics-process-1.0.3.tgz#da94de779105c0ceb4f762e13b707a649b9a6369"
+  integrity sha512-OHIY9wj+/myb8cW/2VNq7Omhf/D0x2TjGT8obbM9mNE+UtwIi96WfFOnZ4r+xlgv2Qqu/YkhjDj4jMqkPmGS7Q==
   dependencies:
     "@carv/stdlib" "^1.0.0"
     "@carv/time" "^1.0.0"

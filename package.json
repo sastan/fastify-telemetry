@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@carv/is": "^1.0.1",
-    "@carv/metrics-process": "^1.0.2",
+    "@carv/metrics-process": "^1.0.3",
     "@carv/stdlib": "^1.0.2",
     "@carv/time": "^1.0.1",
     "fastify-plugin": "^3.0.0"

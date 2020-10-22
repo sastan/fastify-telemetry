@@ -4,6 +4,7 @@ import fp from 'fastify-plugin'
 import * as is from '@carv/is'
 import { never, constant } from '@carv/stdlib'
 import { millisToSeconds } from '@carv/time'
+import { Labels } from '@carv/telemetry'
 
 import { RequestDurationOptions, ExtractLabel, ExtractLabels } from './types'
 import * as util from './util'
@@ -93,7 +94,13 @@ function makeExtractLabels({
 
   if (extractors.length > 0) {
     return (request, reply) => {
-      return Object.fromEntries(extractors.map(([key, extract]) => [key, extract(request, reply)]))
+      const labels: Labels = {}
+
+      for (const [key, extract] of extractors) {
+        labels[key] = extract(request, reply)
+      }
+
+      return labels
     }
   }
 
