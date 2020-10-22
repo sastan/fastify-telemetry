@@ -40,7 +40,7 @@
   },
   "module": "dist/fastify-telemetry.esm.js",
   "devDependencies": {
-    "@carv/telemetry": "^1.0.4",
+    "@carv/telemetry": "^1.1.0",
     "fastify": "^3.7.0",
     "husky": "^4.3.0",
     "np": "^6.5.0",
@@ -58,10 +58,14 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
+    "@carv/is": "^1.0.1",
+    "@carv/metrics-process": "^1.0.2",
+    "@carv/stdlib": "^1.0.2",
+    "@carv/time": "^1.0.1",
     "fastify-plugin": "^3.0.0"
   },
   "peerDependencies": {
-    "@carv/telemetry": "1.x",
+    "@carv/telemetry": "^1.1.0",
     "fastify": "3.x"
   },
   "keywords": [

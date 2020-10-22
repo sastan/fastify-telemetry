@@ -28,7 +28,7 @@ async function build(options?: import('../src').FastifyTelemetryOptions) {
   return app
 }
 
-test('telemetry', async () => {
+test('telemetry decorators', async () => {
   const app = await build()
 
   let response = await app.inject({
@@ -53,4 +53,11 @@ test('telemetry', async () => {
 
   expect(response.payload).toMatch('# TYPE requests_count counter')
   expect(response.payload).toMatch(/^requests_count 1 \d{13}$/m)
+
+  // default metrics
+  expect(response.payload).toMatch('# TYPE http_concurrent_connections histogram')
+  expect(response.payload).toMatch('# TYPE http_concurrent_requests histogram')
+  expect(response.payload).toMatch('# TYPE http_request_duration_seconds histogram')
+
+  expect(response.payload).toMatch('# TYPE process_version_info gauge')
 })

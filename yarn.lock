@@ -870,17 +870,25 @@
   resolved "https://registry.npmjs.org/@carv/is/-/is-1.0.1.tgz#1dc85a1934b1333b4af87a4abfe3b5223c02603f"
   integrity sha512-Wjam9rF0fWP6wZ7thQgsHgVoGhZwmrKO/N4nKYwf5PkSol9HQmsJMPpEdrWUBNZgCmIPwrbiGMM+wYWiN8FHqQ==
 
-"@carv/stdlib@^1.0.2":
+"@carv/metrics-process@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@carv/metrics-process/-/metrics-process-1.0.2.tgz#4b4830f19883ecec7eb37d900236af59f166c44f"
+  integrity sha512-/qhBXispkVC/ebpduNNjyUJVN2RNcUf4ifUyPQEKZ/aJn7xc12Zz77OW2dXZBWq/6PvNruOZCv76Uozh4YiOkw==
+  dependencies:
+    "@carv/stdlib" "^1.0.0"
+    "@carv/time" "^1.0.0"
+
+"@carv/stdlib@^1.0.0", "@carv/stdlib@^1.0.2":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@carv/stdlib/-/stdlib-1.0.2.tgz#6c3876f718e86177911bb4f61b2ec7b788126df4"
   integrity sha512-yoZe3zLYuX4SB6+ue3NX38etBTSn4PIR9tyiNCxuhcOPpopNRUhNDSmKZAeGay/ntZ63lhq42z72eDrO/YdkzQ==
   dependencies:
     "@carv/is" "^1.0.1"
 
-"@carv/telemetry@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/@carv/telemetry/-/telemetry-1.0.4.tgz#fa827967fcc7ffd2fecb197f3224a21dc1e582e8"
-  integrity sha512-hHEjO99LB/EZXgceVG0l+KL9nyqa6xkhBMLB2Xxy2Dk5CZaUML2SaVKLaoCD//eq1Hj2pBTOfPTS+nGWSW5/aA==
+"@carv/telemetry@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/@carv/telemetry/-/telemetry-1.1.0.tgz#e4d2d16bfe53523496d76aaf30a8725b4a31b1cc"
+  integrity sha512-cYdleTi/7AC+/ZgybegldsmPIKnY54IDJPbAMpSzp2ALa4B1cAkiY3aGKzody+G0PgnNzucDQU3nsHk7JcMKWQ==
   dependencies:
     "@carv/is" "^1.0.0"
     "@carv/stdlib" "^1.0.2"
@@ -891,7 +899,7 @@
     "@opentelemetry/metrics" "^0.12.0"
     avvio "^7.2.0"
 
-"@carv/time@^1.0.0":
+"@carv/time@^1.0.0", "@carv/time@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@carv/time/-/time-1.0.1.tgz#c3bbf9106a7e04ce414a8a1e240238e4a2608659"
   integrity sha512-mpOt8e6fZN9fMdsqsvKDcq9EqUCMXpuMqYCrbfhROXsHSMehB1Ugy0OBHYqmU8jH4zZRswd8YNRfbg7eocQFDA==
